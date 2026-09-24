@@ -1,7 +1,7 @@
 import React from 'react'
 import Home from './features/home/Home';
 import Login from './features/login/Login';
-
+import Eventdetail from './features/home/components/Eventdetail';
 import Addevent from './features/addevent/Addevent';
 
 import {
@@ -39,6 +39,10 @@ function App() {
     {
       path: "/addevnt",
       element:<Addevent/>
+    },
+    {
+      path: "/event/:id",
+      element:<Eventdetail/>
     }
    
   ])

@@ -86,6 +86,18 @@ app.get("/home",(req,res)=>{
     res.json(events)
 })
 
+app.get("/event/:id",(req,res)=>{
+    const id=req.params.id
+    const index=events.findIndex((ev)=>ev.id==id)
+
+    if(index==-1){
+        
+    }
+
+
+    res.json(events)
+})
+
 
 app.post("/events",(req,res)=>{
     const newenvt=req.body
